@@ -7,10 +7,10 @@ print(reverse_list(my_list))
 def rotate_list(lst, k):
     if not lst:
         return lst
-    k = k % len(lst)  # Handle rotations greater than list length
+    k = k % len(lst) 
     return lst[-k:] + lst[:-k]
 
 
 my_list = [1, 2, 3, 4, 5]
 rotated_list = rotate_list(my_list, 2)
-print(rotated_list)  # Output: [4, 5, 1, 2, 3]
+print(rotated_list)
